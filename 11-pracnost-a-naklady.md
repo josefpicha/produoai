@@ -67,6 +67,6 @@ Detailní položkový rozpis je v dok. 15.
 
 ## 5. Body zpřesňující odhad
 
-1. Doladění rozsahu MVP (co odsunout do fáze 2).
+1. Doladění rozsahu MVP.
 2. Fakturace a DPH, cílové trhy.
 3. Návrh UI (obrazovky jsou navrženy v dok. 12) — upřesní pracnost frontendu.
