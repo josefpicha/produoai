@@ -18,7 +18,7 @@ Zásada: **škálujeme, až když to čísla ukážou**, ne dopředu „pro jist
 | **Frontend (Next.js na Container Apps)** | víc kopií + zrychlení statického obsahu | Container Apps přidá kopie podle počtu požadavků; **Front Door (CDN)** cachuje statické části |
 | **Backend (FastAPI na Container Apps)** | automaticky víc kopií podle vytížení | pravidlo autoscalingu Container Apps na počet požadavků / CPU; backend je „bezstavový", takže přidání kopie nic nerozbije |
 | **Workers (na pozadí)** | víc kopií podle délky fronty | Container Apps škáluje workery podle **délky fronty v Service Bus** (víc čekajících úkolů → víc workerů) |
-| **Databáze (PostgreSQL Flexible Server)** | silnější stroj + čtecí kopie | zvětšíme výpočetní tier; při hodně čtení přidáme **read replику** a čtení katalogu na ni směrujeme |
+| **Databáze (PostgreSQL Flexible Server)** | silnější stroj + čtecí kopie | zvětšíme výpočetní tier; při hodně čtení přidáme **read repliку** a čtení katalogu na ni směrujeme |
 | **Spojení k databázi** | sdílení přes prostředníka | **PgBouncer** (viz níže) |
 | **Vyhledávání podobnosti** | index v databázi | **pgvector** v té samé Postgres; samostatnou vyhledávací DB (Azure AI Search) až při statisících záznamů |
 | **Soubory (Blob Storage)** | prakticky bez limitu | Blob zvládne růst sám; často stahované výstupy přes CDN |
