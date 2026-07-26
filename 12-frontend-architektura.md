@@ -1,6 +1,6 @@
 # 12 — Architektura frontendu (routy, obrazovky, volání API, struktura kódu)
 
-Frontend je **Next.js (App Router) + React + TypeScript + Tailwind + shadcn/ui**. Routy jsou anglicky (URL i složky v kódu). Vzhledem k tomu, že návrh UI zatím není k dispozici, níže **navrhujeme obrazovky** podle očekávané funkcionality. Slouží jako výchozí kostra k doladění s designérem.
+Frontend je **Next.js (App Router) + React + TypeScript + Tailwind + shadcn/ui**. Vzhledem k tomu, že návrh UI zatím není k dispozici, níže **navrhujeme obrazovky** podle očekávané funkcionality. **Slouží jako výchozí kostra k doladění s designérem.**
 
 ## 1. Tři druhy stránek
 
