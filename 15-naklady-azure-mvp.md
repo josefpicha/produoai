@@ -72,8 +72,6 @@ Reálně se dá čekat provoz kolem **900–1 100 EUR/měsíc** pro rozumně nas
 | **Stripe** | ~1,5 % + 0,25 € za platbu kartou (EU) + poplatky Connect (~2 € měsíčně za aktivní účet tvůrce + poplatek za výplatu) | **není fixní** — je to % z obratu; při obratu 10 000 €/měsíc řádově 150–250 € |
 | **Fakturoid / iDoklad** | ~10–30 €/měsíc | fakturace |
 | Doména + e-mailová doména | ~2–10 €/měsíc | |
-| **Penetrační test** | 2 000–6 000 € jednorázově | před spuštěním, pak periodicky |
-| Právní / daňové poradenství (DPH, DPIA) | dle rozsahu | doporučeno (dok. 05, 06) |
 
 ## 7. Jak náklady snížit (páky)
 
