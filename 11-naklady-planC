@@ -1,0 +1,59 @@
+# Plán C — Pracnost, harmonogram a náklady (2 vývojáři)
+
+Připraveno pro: **ProduoAI**
+
+> Pracnost je uvedena v člověko-dnech (MD) jako rozpětí (od–do). Jde o **optimistický scénář** — počítá s plynulým průběhem a naplno využitým kódovacím agentem (Cursor / Claude Code). Členění na fáze **C0–C4 odpovídá roadmapě (dok. 10)**. Cena je vypočtena při denní sazbě 7 000 Kč/MD (bez DPH); konečná fakturace probíhá dle skutečně odpracovaných MD.
+>
+> **Tým:** 2 full-stack vývojáři. Plán C nepotřebuje ML inženýra — párování stojí na hotových embeddingech (Azure OpenAI) a pgvector.
+
+## 1. Pracnost po fázích
+
+Každá fáze zahrnuje jak backend, tak příslušné obrazovky (frontend).
+
+| Fáze | Obsah | Pracnost (MD) |
+|------|-------|---------------|
+| **C0** | Příprava a architektura, prostředí DEV, nasazování | 4–6 |
+| **C1** | Účty a katalog: účty/role/profily, katalog + veřejné stránky + vyhledávání, nahrávání příloh, obrazovky | 20–31 |
+| **C2** | Poptávky, párování a propojení: poptávky, nabídky, párování (embeddingy + pgvector), propojení, chat (WebSockets), obrazovky | 17–26 |
+| **C3** | Předplatné a notifikace: Stripe Billing, fakturace předplatného, e-mailové notifikace, obrazovky | 10–15 |
+| **C4** | Administrace, hodnocení, produkční doladění (bezpečnost/GDPR základ, monitoring, zálohy, TEST/PROD), dokumentace, spuštění | 13–19 |
+| **Celkem** | | **64–97** |
+
+## 2. Harmonogram (2 vývojáři)
+
+| Přibližně měsíc | Fáze |
+|-----------------|------|
+| Měsíc 1 | C0 Příprava a architektura, C1 Účty a katalog |
+| Měsíc 2 | C2 Poptávky, párování a propojení, C3 Předplatné a notifikace |
+| Měsíc 3 | C4 Administrace, doladění a spuštění |
+
+**Odhad doby realizace: ~2–3 měsíce.** Kratší konec platí při užším rozsahu a hotovém návrhu UI.
+
+> **Pozn. k nákladům:** celková cena vývoje odpovídá počtu člověko-dní × sazba. Dva vývojáři znamenají nižší měsíční náklad než tříčlenný tým; doba realizace se tomu přizpůsobuje.
+
+## 3. Cena vývoje
+
+Vypočteno při denní sazbě **7 000 Kč / MD** (ceny bez DPH).
+
+| Fáze | Pracnost (MD) | Cena (Kč) |
+|------|---------------|-----------|
+| C0 Příprava a architektura | 4–6 | 28 000 – 42 000 |
+| C1 Účty a katalog | 20–31 | 140 000 – 217 000 |
+| C2 Poptávky, párování a propojení | 17–26 | 119 000 – 182 000 |
+| C3 Předplatné a notifikace | 10–15 | 70 000 – 105 000 |
+| C4 Administrace, doladění a spuštění | 13–19 | 91 000 – 133 000 |
+| **Celkem** | **64–97** | **448 000 – 679 000** |
+
+**S doporučenou rezervou +15–25 %:** ~**515 000 – 849 000 Kč**.
+
+**Měsíční náklad na vývoj (orientačně):** při 2 vývojářích ≈ **~250 000 Kč/měsíc** na mzdy vývoje; celková částka je rozložená do doby realizace.
+
+## 4. Provozní náklady (měsíčně)
+
+- **Azure:** ~600–1 340 EUR/měsíc za všechna prostředí (detail v dok. 15).
+- **Stripe:** pouze **předplatné** (Stripe Billing) — poplatek z předplatného a karetní poplatky. Žádné poplatky z obratu zakázek.
+- **Ostatní:** fakturace předplatného (~10–30 €/měsíc), doména; licence kódovacího agenta pro 2 vývojáře (řádově desítky EUR na osobu).
+
+## 5. Shrnutí
+
+Plán C se **2 vývojáři**: **64–97 MD**, **~448 000 – 679 000 Kč** bez DPH (bez rezervy), doba realizace **~2–3 měsíce**. Jde o optimistický odhad — při složitějších integracích (DPH, párování, chat) nebo změnách zadání může pracnost narůst; doporučená rezerva +15–25 % s tím počítá.
